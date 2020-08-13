@@ -74,5 +74,5 @@ gcloud config configurations describe darealpunjabi-20200813
 > ▫ account: your-email@gmail.com <br />
 > ▫ project: darealpunjabi-20200813 <br />
 
-## Activate to another Configuration
+## Activate another Configuration
 gcloud config configurations activate <config-name>
