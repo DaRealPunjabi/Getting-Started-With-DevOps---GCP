@@ -49,6 +49,7 @@ Please enter your numeric choice: <b>1</b>
 Enter a Project ID. <b>darealpunjabi-20200813</b>
 Your current project has been set to: [darealpunjabi-20200813].
 👏 Your current project has been set to: [devops-20200813].
+<pre>
 
 # Working with Configurations
 
