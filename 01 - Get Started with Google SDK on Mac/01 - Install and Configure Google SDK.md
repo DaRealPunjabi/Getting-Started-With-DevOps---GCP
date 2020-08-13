@@ -60,8 +60,8 @@ Enter a Project ID. <b>darealpunjabi-20200813</b>
 ```
 gcloud config configurations list
 ```
->default
->darealpunjabi-20200813
+>default <br />
+>darealpunjabi-20200813 <br />
 
 ## Describe a Configuration
 ```
