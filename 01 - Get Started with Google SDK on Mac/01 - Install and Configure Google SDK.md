@@ -17,9 +17,9 @@ curl https://sdk.cloud.google.com > install.sh
 Run the script using bash or zsh
 ```zsh install.sh --disable-prompts
 ```
->— disable-prompts ~ disable prompts
->— install-dir=DIRECTORY ~set the installation root directory to DIRECTORY. The Cloud SDK will be installed in DIRECTORY/google-cloud-sdk. The default is $HOME.
->❗️ Close and restart the terminal for the changes to take effects.
+>— disable-prompts ~ disable prompts <br />
+>— install-dir=DIRECTORY ~set the installation root directory to DIRECTORY. The Cloud SDK will be installed in DIRECTORY/google-cloud-sdk. The default is $HOME. <br />
+>❗️ Close and restart the terminal for the changes to take effects. <br />
 
 # Initialise the SDK
 Use the gcloud init command to perform several common SDK setup tasks. These include authorizing the SDK tools to access Google Cloud Platform using your user account credentials and setting up the default SDK configuration.
@@ -47,8 +47,7 @@ Pick cloud project to use:
  [1] Create a new project
 Please enter your numeric choice: <b>1</b>
 Enter a Project ID. <b>darealpunjabi-20200813</b>
-Your current project has been set to: [darealpunjabi-20200813].
-👏 Your current project has been set to: [devops-20200813].
+👏 Your current project has been set to: [darealpunjabi-20200813].
 </pre>
 
 # Working with Configurations
@@ -66,12 +65,12 @@ gcloud config configurations list
 ```
 gcloud config configurations describe darealpunjabi-20200813
 ```
->is_active: true
->name: devops-20200813
->properties:
-> ▫️ core:
-> ▫ account: your-email@gmail.com
-> ▫ project: darealpunjabi-20200813
+>is_active: true <br />
+>name: devops-20200813 <br />
+>properties: <br />
+> ▫️ core: <br />
+> ▫ account: your-email@gmail.com <br />
+> ▫ project: darealpunjabi-20200813 <br />
 
 ## Activate to another Configuration
 gcloud config configurations activate <config-name>
