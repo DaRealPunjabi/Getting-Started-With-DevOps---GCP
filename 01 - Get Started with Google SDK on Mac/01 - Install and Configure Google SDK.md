@@ -27,11 +27,13 @@ Use the gcloud init command to perform several common SDK setup tasks. These inc
 gcloud init
 ```
 ## Create a configuration
-```Pick configuration to use:
+<pre>
+Pick configuration to use:
  [1] Re-initialize this configuration [default] with new settings
  [2] Create a new configuration
-Please enter your numeric choice: 2
-```
+Please enter your numeric choice: <b>2</b>
+</pre>
+
 ## Give it a name …
 <pre>
 Enter configuration name. Names start with a lower case letter and
