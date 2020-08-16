@@ -13,3 +13,4 @@ Description of important features.
 ### Compute Instance
  * [Create a Standard Image Instance](<01 - Create a Standard Image Compute Instance.md>)
  * [Create a Firewall Rule](<02 - Create a Firewall Rule.md>)
+ * [Configure TMUX](<03 - Configure TMUX.md>)
