@@ -32,7 +32,7 @@ Ctrl + B (once) and then arrow keys
 type exit on selected panel
 ```
 
-#Configure Tmux
+# Configure Tmux
 From ssh terminal using an editor to create the configuration file
 ```
 vi .tmux.conf
