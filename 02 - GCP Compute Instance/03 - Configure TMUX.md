@@ -14,7 +14,7 @@ Click the ⚙️ icon and then click Tmux setting
 
 **Split the screen horizontally** <br />
 ```
-Ctrl+B (once) and then " (double quote character) <br />
+Ctrl+B (once) and then " (double quote character)
 ```
 
 **Split the screen vertically** <br />
