@@ -1,4 +1,4 @@
-# Create a Standard Image Compute Instance
+# Create a Kubernetes Cluster
 
 Create a general-Purpose standard machine with Ubuntu 18.04 LTS and 10GB of a standard persistent disk.
 
@@ -11,4 +11,10 @@ gcloud compute instances create jenkins-server \
   --image-family=ubuntu-1804-lts \
   --image-project=ubuntu-os-cloud \
   --tags=http-server,https-server
+```
+
+# Delete a Compute Instance
+```
+gcloud compute instances delete jenkins-server \
+  --zone=us-central1-a
 ```
