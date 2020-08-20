@@ -13,6 +13,9 @@ gcloud compute instances create jenkins-server \
   --tags=http-server,https-server
 ```
 
+# Cleaning up
+To avoid incurring charges to your Google Cloud Platform account for the resources used.
+
 # Delete a Compute Instance
 ```
 gcloud compute instances delete jenkins-server \

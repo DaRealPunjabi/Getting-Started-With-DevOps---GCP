@@ -76,3 +76,18 @@ my-web-server   LoadBalancer   34.155.221.38   80:32531/TCP   2d15h
 ## Test the deployment
 From the browser, enter http://34.155.221.38/80
 >Hello, World! - DaRealpunjabi  <br />
+
+# Cleaning up
+To avoid incurring charges to your Google Cloud Platform account for the resources used.
+
+## Delete the Service
+This deallocates the Cloud Load Balancer created for your Service:
+```
+kubectl delete service my-web-server
+```
+## Delete the Cluster
+This deletes the resources that make up the cluster, such as the compute instances, disks and network resources:
+```
+gcloud container clusters delete my-cluster \
+--zone=europe-west2-a
+```
