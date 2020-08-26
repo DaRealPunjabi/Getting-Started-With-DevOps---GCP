@@ -3,4 +3,5 @@
 gcloud container clusters create my-cluster \
   --zone=europe-west2-a \
   --issue-client-certificate \
-  --enable-basic-auth
+  --enable-basic-auth \
+  --num-nodes=1
