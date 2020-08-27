@@ -36,5 +36,6 @@ A deployment ensures the desired number of pods are running and available at all
 ## Features
 Description of important features.
 
-### Kubernetes Cluster
+
  * [Create a Kubernetes Cluster](<01 - Create a Kubernetes Cluster.md>)
+ * [Create, View, Delete a Pod](<02 - Create View Delete a Pod.md>)
