@@ -143,7 +143,9 @@ Test the service
 From the browser, enter http://34.230.134.193/80
 
 <blockquote>
+<b>
 Welcome to nginx!
+</b>
 </blockquote>
 
 # Delete the Service/Pod
