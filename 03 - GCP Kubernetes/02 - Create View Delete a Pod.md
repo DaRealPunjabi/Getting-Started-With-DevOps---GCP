@@ -141,7 +141,10 @@ my-service-name   LoadBalancer   10.3.243.234   35.230.134.193</b>
 
 Test the service
 From the browser, enter http://34.230.134.193/80
->Welcome to nginx!
+
+<blockquote>
+Welcome to nginx!
+</blockquote>
 
 # Delete the Service/Pod
 ```
@@ -155,7 +158,7 @@ kubectl exec pod/my-nginx-pod -- ls
 kubectl exec --stdin --tty pod/my-nginx-pod -- /bin/bash
 ```
 
-#Attach to a running pod
+# Attach to a running pod
 ```
 kubectl attach pod/my-nginx-pod -i
 ```
