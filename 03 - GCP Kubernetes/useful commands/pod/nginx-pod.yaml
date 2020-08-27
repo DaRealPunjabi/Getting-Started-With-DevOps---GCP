@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-nginx-pod
+  labels:
+    app: my-app-label
+    environment: development
+spec:
+  containers:
+    - image: nginx
+      name: my-web-container
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP

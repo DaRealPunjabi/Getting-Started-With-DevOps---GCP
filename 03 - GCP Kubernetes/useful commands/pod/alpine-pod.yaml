@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine-pod
+  namespace: default
+spec:
+  containers:
+  - image: alpine
+    command:
+      - /bin/sh
+      - "-c"
+      - "sleep 5m"
+    imagePullPolicy: IfNotPresent
+    name: alpine-container
+  restartPolicy: Never
