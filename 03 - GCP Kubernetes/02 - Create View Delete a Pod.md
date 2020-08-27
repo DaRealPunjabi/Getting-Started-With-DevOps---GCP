@@ -140,13 +140,11 @@ my-service-name   LoadBalancer   10.3.243.234   35.230.134.193</b>
 </pre>
 
 Test the service
-From the browser, enter http://34.230.134.193/80
 
-<blockquote>
-<b>
-Welcome to nginx!
-</b>
-</blockquote>
+<pre>
+From the browser, enter http://34.230.134.193/80
+<b>Welcome to nginx!</b>
+</pre>
 
 # Delete the Service/Pod
 ```
