@@ -113,10 +113,10 @@ kubectl run debug-pod --image=yauritux/busybox-curl \
   --tty  --stdin --attach --rm \
   --command -- sh
 ```
-*Wait for the Pod to become available* and from once the shell prompt appears
+**Wait for the Pod to become available** and once the shell prompt appears
 <pre>
 telnet 10.0.1.10 80          | curl http://10.0.1.10:80
-GET /                        | Welcome to nginx!
+GET /                        | <b>Welcome to nginx!</b>
 <b>Welcome to nginx!</b>
 </pre>
 
