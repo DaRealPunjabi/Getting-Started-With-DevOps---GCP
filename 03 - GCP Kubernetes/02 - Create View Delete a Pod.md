@@ -81,7 +81,7 @@ kubectl logs my-nginx-pod
 
 # Access the Pod
 
-## 1.From local machine using Port Forwarding
+## 1. From local machine using Port Forwarding
 ```
 kubectl port-forward pod/my-nginx-pod 8081:80
 ```
