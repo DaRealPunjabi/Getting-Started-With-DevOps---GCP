@@ -85,6 +85,7 @@ kubectl logs my-nginx-pod
 ```
 kubectl port-forward pod/my-nginx-pod 8081:80
 ```
+
 Run the following command in the terminal:
 
 <pre>
@@ -94,19 +95,19 @@ curl localhost:8081
 
 ## 2. From another Pod within the Cluster using internal Endpoint
 
-Create a service
+### Create a service
 ```
 kubectl expose pod/my-nginx-pod --name=my-service-name \
   --type=NodePort
 ```
 
-Retrieve the endpoint
+### Retrieve the endpoint
 <pre>
 kubectl describe service my-service-name | grep Endpoints
 <b>Endpoints: 10.0.1.10:80</b>
 </pre>
 
-Launch another Pod
+### Launch another Pod
 ```
 kubectl run debug-pod --image=yauritux/busybox-curl \
   --restart=Never \
@@ -121,28 +122,28 @@ GET /                        | <b>Welcome to nginx!</b>
 </pre>
 
 ## 3. From outside the Cluster using external IP Address
-Delete the NodePort service
+### Delete the NodePort service
 ```
 kubectl delete service my-service-name
 ```
-Create the LoadBalancer Service
+### Create the LoadBalancer Service
 ```
 kubectl expose pod my-nginx-pod --name=my-service-name \
   --port=80 \
   --target-port=80 \
   --type=LoadBalancer
 ```
-Get the External IP Address
+### Get the External IP Address
 <pre>
 kubectl get services
 <b>NAME              TYPE           CLUSTER-IP     EXTERNAL-IP
 my-service-name   LoadBalancer   10.3.243.234   35.230.134.193</b>
 </pre>
 
-Test the service
+### Test the service, From the browser, enter
 
 <pre>
-From the browser, enter http://34.230.134.193/80
+http://34.230.134.193/80
 <b>Welcome to nginx!</b>
 </pre>
 
