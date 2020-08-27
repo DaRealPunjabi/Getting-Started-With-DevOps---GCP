@@ -23,13 +23,13 @@ metadata:
 
 ```
 spec:
- containers:
-   – name: my-web-container
-     image: nginx
-     ports:
-       – containerPort: 80
-         name: http
-         protocol: TCP
+  containers:
+  - name: my-web-container
+    image: nginx
+    ports:
+    - name: http
+      containerPort: 80
+      protocol: TCP
 ```
 >Finally, the objects that make up the pod are specified. This includes the name of the container and the image on which the container is based. The containerPort attribute is mandatory it defines the port on which app can be reached out inside the container. The value of the protocol attribute is TCP by default. The name attribute is optional only if there is one port declared.
 

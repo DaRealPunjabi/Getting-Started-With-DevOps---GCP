@@ -8,9 +8,9 @@ metadata:
     environment: development
 spec:
   containers:
-    - image: nginx
-      name: my-web-container
-      ports:
-        - name: http
-          containerPort: 80
-          protocol: TCP
+  - name: my-web-container
+    image: nginx
+    ports:
+    - name: http
+      containerPort: 80
+      protocol: TCP
